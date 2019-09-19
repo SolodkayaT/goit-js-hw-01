@@ -6,10 +6,6 @@ let shippingСost;
 
 if (userCountry === null) {
   alert(USER_CANCELED);
-  console.assert(
-    userCountry === null && USER_CANCELED,
-    'Error: in user canceled message',
-  );
 }
 if (userCountry !== null) {
   switch (userCountry.toLowerCase()) {
