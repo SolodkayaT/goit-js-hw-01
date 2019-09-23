@@ -6,8 +6,7 @@ let shippingСost;
 
 if (userCountry === null) {
   alert(USER_CANCELED);
-}
-if (userCountry !== null) {
+} else {
   switch (userCountry.toLowerCase()) {
     case 'китай':
       shippingСost = '100';
@@ -29,5 +28,7 @@ if (userCountry !== null) {
   }
 }
 if (shippingСost !== undefined) {
-  alert(`Доставка в ${userCountry} будет стоить ${shippingСost} кредитов`);
+  alert(
+    `Доставка в ${userCountry.toUpperCase()} будет стоить ${shippingСost} кредитов`,
+  );
 }

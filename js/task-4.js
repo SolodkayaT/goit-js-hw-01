@@ -11,9 +11,7 @@ const userSaid = prompt('Сколько дроидов вы хотите при�
 
 if (userSaid === null) {
   message = USER_CANCELED;
-}
-
-if (userSaid > 0 && userSaid != null && userSaid !== '' && !userSaid.isNan) {
+} else if (userSaid > 0) {
   totalPrice = pricePerDroid * userSaid;
 
   if (totalPrice < credits) {

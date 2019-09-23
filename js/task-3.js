@@ -8,12 +8,9 @@ const userInput = prompt('Введите свой пароль:');
 
 if (userInput === null) {
   message = USER_CANCELED;
-}
-
-if (userInput === ADMIN_PASSWORD) {
+} else if (userInput === ADMIN_PASSWORD) {
   message = WELCOME;
-}
-if (userInput !== ADMIN_PASSWORD && userInput != null) {
+} else {
   message = ACCESS_DENIED;
 }
 alert(message);
